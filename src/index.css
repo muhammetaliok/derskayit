@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f1f1f1;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0.5rem 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  font-family: 'Inter', sans-serif;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr r;
+  grid-gap: 1rem;
+}
+
+.picked-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  width: 20rem;
+}
+
+.block {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.picked-body {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  flex: 1;
+  margin-top: 5rem;
+  display: block;
+  position: static;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 2;
+}
+
+.papercard {
+  display: flex;
+  flex-direction: row;
+}
+
+button.remove {
+  background-color: #F8FAFC;
+  width: 1.5rem;
+  color: #3D4B5F;
+  font-weight: bold;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+
+button.remove:hover {
+  background-color: #8EC1D6;
+}
+
+.app-container {
+  display: flex;
+}
+
+.lesson-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 62rem;
+  margin: auto;
+}
+
+.main-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  width: 95%;
+}
+
+button.modal:hover {
+  background-color: #5d3ebc;
+  width: 1.5rem;
+  font-weight: bold;
+}
+
+.picked-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
