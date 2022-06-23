@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import MainList from "./components/MainList";
 import PickedList from "./components/PickedList";
-import data from "./menu-data/data";
+import data from "./lesson-data/data";
 import { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -10,14 +10,13 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 
-const style = {
+const style = { 
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 400,
   bgcolor: "background.paper",
-  border: "2px solid #ffff",
   borderRadius: "3rem",
   boxShadow: 24,
   pt: 2,
@@ -30,26 +29,20 @@ const style = {
   flexDirection: "column",
 };
 
-
-
 function BasicModal() {
   const [open, setOpen] = React.useState(true);
   const handleClose = () => setOpen(false);
-  const [text, setText] = useState();
-
 
   return (
     <div>
-      
       <Modal
+        sx={{ backdropFilter: "blur(10px)" }}
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        
         <Box sx={style}>
-          
           <Typography
             id="modal-modal-title"
             variant="h6"
@@ -63,15 +56,11 @@ function BasicModal() {
             Lütfen giriş yapınız.
           </Typography>
           <TextField
-            value={text}
-            onChange={(event) => setText(event.target.value)}
-            error={text === "Error"}
-            helperText={text === "" ? "Boş bırakılamaz" : ""}
             name="email"
             id="outlined-basic"
             label="Öğrenci E-posta"
             variant="outlined"
-            sx={{ margin: "0.8rem" }}
+            sx={{ margin: "0.8rem", borderRadius: "15rem" }}
             type="email"
             required
           />
@@ -93,9 +82,7 @@ function BasicModal() {
           >
             Giriş Yap
           </Button>
-          
         </Box>
-       
       </Modal>
     </div>
   );

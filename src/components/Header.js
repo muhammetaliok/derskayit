@@ -44,7 +44,7 @@ export default function Header() {
               fontWeight: "bold",
             }}
           >
-            <center>Trakya Üniversitesi Ders Seçim Sistemi</center>
+            <center>Trakya Üniversitesi Ders Kayıt Sistemi</center>
           </Typography>
         </Toolbar>
       </AppBar>

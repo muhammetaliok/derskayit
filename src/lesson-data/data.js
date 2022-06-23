@@ -1,7 +1,7 @@
 const data = {
   bilMuh: [
     {
-      id: "1",
+      id: "101",
       derskodu: "BIL401",
       title: "Web Tabanlı Programlama",
       kredi: 4,

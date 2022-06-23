@@ -69,7 +69,7 @@ export default function MainList(props) {
                 <Paper elevation={10}>
                   <Lesson
                     className="lesson-main"
-                    key={lesson.id}
+                    key={lesson.id}   
                     lesson={lesson}
                     onAdd={onAdd}
                   />
